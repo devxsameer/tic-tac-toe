@@ -1,0 +1,70 @@
+/* Global Variables */
+:root {
+  --color-primary: #494f51;
+  --color-primary-dark: #16191a;
+  --color-secondary: #079991;
+  --color-secondary-dark: #033735;
+  --color-copy-lighter: #849594;
+  --color-text: #fbfbfb;
+}
+
+/* Global Styling */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  color: var(--color-text);
+  background-color: var(--color-primary-dark);
+}
+a {
+  color: inherit;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+  font-weight: inherit;
+  margin-bottom: 1em;
+}
+p {
+  text-wrap: pretty;
+  font-size: 1.125rem;
+  max-inline-size: 65ch;
+}
+h1 {
+  font-weight: 500;
+  margin-bottom: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
