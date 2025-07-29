@@ -330,6 +330,20 @@ h6 {
 .scoreboard .score-o {
   background-color: var(--color-secondary);
 }
+/* footer */
+.footer {
+  align-self: center;
+  color: var(--color-text-gray);
+}
+.footer p {
+  font-weight: 500;
+  font-size: 1rem;
+}
+.footer p a {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 700;
+}
 /* dialog */
 .dialog {
   z-index: 100;
