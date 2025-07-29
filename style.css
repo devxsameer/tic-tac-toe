@@ -363,10 +363,16 @@ h6 {
   opacity: 0;
   z-index: -100;
 }
-.dialog-box {
-  background-color: var(--color-primary-dark);
-  padding: 1rem;
+.dialog > div {
   width: 100%;
+  background-color: var(--color-primary-dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dialog-box {
+  padding: 1rem;
+  width: min(100%, 500px);
   display: flex;
   flex-flow: column nowrap;
   gap: 1rem;
