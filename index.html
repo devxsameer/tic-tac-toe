@@ -15,7 +15,108 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
+    <div class="container">
+      <div class="landing-page">
+        <div class="logo-box">
+          <img src="./assets/logo.svg" width="75px" alt="logo" class="logo" />
+        </div>
+        <div class="player-select">
+          <h3>Pick Player 1's Mark</h3>
+          <div class="player-select-btns">
+            <button class="player-select-btn player-selected" value="X">
+              <span>
+                <img
+                  width="30px"
+                  src="./assets/icon-x-transparent.svg"
+                  alt="X"
+                  value="X"
+                />
+                <img
+                  class="on-active"
+                  width="30px"
+                  src="./assets/icon-x-gray.svg"
+                  alt="X"
+                  value="O"
+                />
+              </span>
+            </button>
+            <button class="player-select-btn" value="O">
+              <span>
+                <img
+                  width="30px"
+                  src="./assets/icon-o-transparent.svg"
+                  alt="O"
+                />
+                <img
+                  class="on-active"
+                  width="30px"
+                  src="./assets/icon-o-gray.svg"
+                  alt="O"
+                />
+              </span>
+            </button>
+          </div>
+          <h3>Remember: Player 1 goes First</h3>
+        </div>
+        <button class="btn start-btn">Start Game</button>
+      </div>
+      <div class="game-board-wrapper hidden">
+        <div class="header-box">
+          <img src="./assets/logo.svg" width="75px" alt="logo" class="logo" />
+          <div class="side">
+            <div class="whose-turn">
+              <span>
+                <img
+                  class="turn"
+                  width="20px"
+                  src="./assets/icon-x-gray.svg"
+                  alt="X"
+                />
+                <img
+                  class="turn"
+                  width="20px"
+                  src="./assets/icon-o-gray.svg"
+                  alt="O"
+                />
+              </span>
+              <span>Turn</span>
+            </div>
+            <button class="restart-btn">
+              <img width="20px" src="./assets/icon-restart.svg" alt="restart" />
+            </button>
+          </div>
+        </div>
+        <div class="game-board">
+          <button class="game-btn" data-position="00"></button>
+          <button class="game-btn" data-position="01"></button>
+          <button class="game-btn" data-position="02"></button>
+          <button class="game-btn" data-position="10"></button>
+          <button class="game-btn" data-position="11"></button>
+          <button class="game-btn" data-position="12"></button>
+          <button class="game-btn" data-position="20"></button>
+          <button class="game-btn" data-position="21"></button>
+          <button class="game-btn" data-position="22"></button>
+        </div>
+        <div class="scoreboard">
+          <div class="score-x">Player X <span></span></div>
+          <div class="draws">Draws <span></span></div>
+          <div class="score-o">Player O <span></span></div>
+        </div>
+      </div>
+      <div class="dialog hidden">
+        <div class="dialog-box">
+          <div class="dialog-content"></div>
+          <div class="btns">
+            <button class="btn quit-btn">Quit Game</button>
+            <button class="btn next-round-btn">Next Round</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Main JavaScript -->
-    <script src="./game.js"></script>
+    <script src="./js/events.js"></script>
+    <script src="./js/game.js"></script>
+    <script src="./js/dom.js"></script>
+    <script src="./js/stats.js"></script>
   </body>
 </html>
